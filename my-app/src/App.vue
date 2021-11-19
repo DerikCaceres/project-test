@@ -1,12 +1,14 @@
 <template>
   <v-app>
-    <Header/>
+    <Toolbar/>
 
+    <Header/>
     <v-main >
       <HelloWorld/>
     </v-main>
 
     <Footer/>
+    <Bottomnavigation/>
   </v-app>
 </template>
 
@@ -14,6 +16,8 @@
 import HelloWorld from './components/HelloWorld';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Toolbar from './components/Toolbar';
+import Bottomnavigation from './components/Bottomnavigation';
 
 export default {
   name: 'App',
@@ -22,6 +26,8 @@ export default {
     HelloWorld,
     Header,
     Footer,
+    Toolbar,
+    Bottomnavigation
   },
 
   data: () => ({

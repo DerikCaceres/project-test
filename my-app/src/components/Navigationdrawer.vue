@@ -2,11 +2,11 @@
   <v-card
     class="geral"
     height="100%"
-    width="200"
+    width="250"
 
   >
     <v-navigation-drawer
-      class="blue accent-4"
+      class=" blue accent-4"
       dark
       permanent
     >
