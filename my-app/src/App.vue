@@ -1,8 +1,8 @@
 <template>
   <v-app>
-    <Toolbar/>
+    <Systembar/>
 
-    <Header/>
+    <Appbar/>
     <v-main >
       <HelloWorld/>
     </v-main>
@@ -14,9 +14,9 @@
 
 <script>
 import HelloWorld from './components/HelloWorld';
-import Header from './components/Header';
+import Appbar from './components/Appbar';
 import Footer from './components/Footer';
-import Toolbar from './components/Toolbar';
+import Systembar from './components/Systembar';
 import Bottomnavigation from './components/Bottomnavigation';
 
 export default {
@@ -24,9 +24,9 @@ export default {
 
   components: {
     HelloWorld,
-    Header,
+    Appbar,
     Footer,
-    Toolbar,
+    Systembar,
     Bottomnavigation
   },
 

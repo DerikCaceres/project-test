@@ -1,16 +1,27 @@
 <template>
   <v-card
-    class="geral"
-    height="100%"
-    width="250"
-
+    height="700"
+    width="300"
+    class="mx-auto"
   >
-    <v-navigation-drawer
-      class=" blue accent-4"
-      dark
-      permanent
-    >
-      <v-list>
+    <v-navigation-drawer permanent>
+      <v-list-item>
+        <v-list-item-content>
+          <v-list-item-title class="text-h6">
+           Dashboard
+          </v-list-item-title>
+          <v-list-item-subtitle>
+            Opcoes
+          </v-list-item-subtitle>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-divider></v-divider>
+
+      <v-list
+        dense
+        nav
+      >
         <v-list-item
           v-for="item in items"
           :key="item.title"
@@ -25,20 +36,12 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
-
-      <template v-slot:append>
-        <div class="pa-2">
-          <v-btn block>
-            Logout
-          </v-btn>
-        </div>
-      </template>
     </v-navigation-drawer>
   </v-card>
 </template>
 
 <style  scoped>
-    .geral {
+    .mx-auto {
         flex: 1;
     }
 </style>
@@ -49,9 +52,10 @@
       return {
         items: [
           { title: 'Dashboard', icon: 'mdi-view-dashboard' },
-          { title: 'Account', icon: 'mdi-account-box' },
-          { title: 'Admin', icon: 'mdi-gavel' },
+          { title: 'Photos', icon: 'mdi-image' },
+          { title: 'About', icon: 'mdi-help-box' },
         ],
+        right: null,
       }
     },
   }
