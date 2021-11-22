@@ -8,10 +8,10 @@
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="text-h6">
-           Dashboard
+           Derik Caceres 
           </v-list-item-title>
           <v-list-item-subtitle>
-            Opcoes
+           RA - 190695
           </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
