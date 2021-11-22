@@ -1,9 +1,11 @@
 <template>
-    <div id="app">
-      <div class="geral">
-        <Navigationdrawer/>
+  <div id="app">
+    <div class="geral">
+      <Navigationdrawer/>
+      <v-content>
         <v-container class="conteudo">main teste</v-container>
-      </div>
+      </v-content>
+    </div>
   </div>
 </template>
 
@@ -15,8 +17,6 @@
     display: flex;
     flex: 1;
 
-  }
-  .conteudo {
   }
 </style>
 
@@ -43,11 +43,11 @@ import Navigationdrawer from './Navigationdrawer.vue';
       importantLinks: [
         {
           text: 'Documentation',
-          href: 'https://vuetifyjs.com',
+          href: 'https://vuetifyjs.com/',
         },
         {
           text: 'Chat',
-          href: 'https://community.vuetifyjs.com',
+          href: 'https://community.vuetifyjs.com/',
         },
         {
           text: 'Made with Vuetify',

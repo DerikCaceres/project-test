@@ -1,10 +1,5 @@
 <template>
-  <v-card
-    height="700"
-    width="300"
-    class="mx-auto"
-  >
-    <v-navigation-drawer permanent>
+    <v-navigation-drawer clipped permanent>
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="text-h6">
@@ -37,7 +32,6 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-  </v-card>
 </template>
 
 <style  scoped>
